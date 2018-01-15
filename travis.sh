@@ -134,14 +134,6 @@ if [ "$CHECK_DOC" = 1 ]; then
 	contrib/devtools/check-doc.py; 
 fi
 
-if [ x"$(file depends/sources | grep symbolic)" = x ]; then
-    exit 1;
-fi
-
-if [ -n "$OSX_SDK" -a x"$(file depends/sdk-sources | grep symbolic)" = x ]; then
-    exit 1
-fi
-
 mkdir -p depends/SDKs
 
 if [ -n "$OSX_SDK" -a ! -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then 
