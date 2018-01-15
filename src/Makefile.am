@@ -11,18 +11,7 @@ AM_CPPFLAGS += -I$(top_srcdir)/src/leveldb/helpers/memenv \
 AM_CPPFLAGS += -I$(builddir)
 
 if EMBEDDED_LEVELDB
-LEVELDB_CPPFLAGS += -I$(top_srcdir)/src/leveldb/include
-LEVELDB_CPPFLAGS += -I$(top_srcdir)/src/leveldb/helpers/memenv
-LIBLEVELDB += $(top_builddir)/src/leveldb/libleveldb.a
-LIBMEMENV  += $(top_builddir)/src/leveldb/libmemenv.a
-
-# NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race
-$(LIBLEVELDB): $(LIBMEMENV)
-
-$(LIBLEVELDB) $(LIBMEMENV):
-	@echo "Building LevelDB ..." && $(MAKE) -C $(@D) $(@F) CXX="$(CXX)" \
-	  CC="$(CC)" PLATFORM=$(TARGET_OS) AR="$(AR)" $(LEVELDB_TARGET_FLAGS) \
-          OPT="$(CXXFLAGS) $(CPPFLAGS)"
+include Makefile.leveldb.include
 endif
 
 noinst_LIBRARIES = \
@@ -36,13 +25,9 @@ endif
 bin_PROGRAMS =
 TESTS =
 
-if BUILD_BITCOIND
-  bin_PROGRAMS += peercoind
-endif
+bin_PROGRAMS += peercoind
 
-if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += peercoin-cli
-endif
+bin_PROGRAMS += peercoin-cli
 
 .PHONY: FORCE
 # bitcoin core #
@@ -200,10 +185,6 @@ clean-local:
 .rc.o:
 	@test -f $(WINDRES) && $(WINDRES) -i $< -o $@ || \
 	  echo error: could not build $@
-
-.mm.o:
-	$(OBJC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \
-	  $(CPPFLAGS) $(AM_CXXFLAGS) $(QT_INCLUDES) $(CXXFLAGS)  -c -o $@ $<
 
 LIBPEERCOIN_SERVER=libpeercoin_server.a
 LIBPEERCOIN_WALLET=libpeercoin_wallet.a
