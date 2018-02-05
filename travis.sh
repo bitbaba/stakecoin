@@ -11,9 +11,9 @@ export TRAVIS_REPO_SLUG="username/reponame"
 export TRAVIS_JOB_NUMBER=JobNo.1
 
 # Matrix
-matrix="Win32Gui"
+#matrix="Win32Gui"
 #matrix="bitcoind"
-#matrix="Cross-Mac"
+matrix="Cross-Mac"
 
 # For `matrix="Cross-Mac"'
 # sudo pip install ez_setup
@@ -141,10 +141,12 @@ if [ -n "$OSX_SDK" -a ! -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; th
 fi
 
 if [ -n "$OSX_SDK" -a -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then 
-	tar -C depends/SDKs -xf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
+	tar -C depends/SDKs -zxvf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
 fi
 
+echo make $MAKEJOBS depends HOST=$HOST $DEP_OPTS
 make $MAKEJOBS -C depends HOST=$HOST $DEP_OPTS
+exit 0
 
 # Start xvfb if needed, as documented at https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
 if [ "$RUN_TESTS" = "true" -a "${DEP_OPTS#*NO_QT=1}" = "$DEP_OPTS" ]; then 
