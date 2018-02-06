@@ -141,7 +141,7 @@ if [ -n "$OSX_SDK" -a ! -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; th
 fi
 
 if [ -n "$OSX_SDK" -a -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then 
-	echo untar #tar -C depends/SDKs -zxvf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
+	tar -C depends/SDKs -zxvf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz;
 fi
 
 make $MAKEJOBS -C depends HOST=$HOST $DEP_OPTS
