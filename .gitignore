@@ -1,4 +1,11 @@
 *.tar.gz
+depends/sdk-sources
+depends/sources
+dist/
+dpi36.background.tiff
+dpi72.background.tiff
+src/build.h
+src/qt/peercoin-qt
 
 *.exe
 src/bitcoin
@@ -30,9 +37,9 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
-src/config/stamp-h1
+src/bitcoin-config.h
+src/bitcoin-config.h.in
+src/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
 
