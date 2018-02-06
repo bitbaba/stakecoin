@@ -81,11 +81,11 @@ elif [ "$matrix" = "Win64Gui" ]; then
 elif [ "$matrix" = "Cross-Mac" ]; then
 	export HOST=x86_64-apple-darwin11
 	export PACKAGES="cmake imagemagick libcap-dev librsvg2-bin libz-dev libbz2-dev libtiff-tools python-dev python-pip"
-	export DEP_OPTS="NO_UPNP=1 DEBUG=1"
+	export DEP_OPTS="NO_UPNP=1"
 	export OSX_SDK=10.11
 	export RUN_TESTS=false
 	export GOAL="deploy"
-	export BITCOIN_CONFIG="--enable-debug --enable-gui --disable-tests --enable-reduce-exports"
+	export BITCOIN_CONFIG="--disable-debug --disable-bench --enable-gui --disable-tests --enable-reduce-exports"
 
 # bitcoind
 elif [ "$matrix" = "bitcoind" ]; then
@@ -141,12 +141,10 @@ if [ -n "$OSX_SDK" -a ! -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; th
 fi
 
 if [ -n "$OSX_SDK" -a -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then 
-	tar -C depends/SDKs -zxvf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
+	echo untar #tar -C depends/SDKs -zxvf depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
 fi
 
-echo make $MAKEJOBS depends HOST=$HOST $DEP_OPTS
 make $MAKEJOBS -C depends HOST=$HOST $DEP_OPTS
-exit 0
 
 # Start xvfb if needed, as documented at https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
 if [ "$RUN_TESTS" = "true" -a "${DEP_OPTS#*NO_QT=1}" = "$DEP_OPTS" ]; then 
