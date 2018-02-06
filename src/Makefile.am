@@ -107,7 +107,7 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(abs_top_builddir)/src/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-version.o: obj/build.h
+libpeercoin_common_a-version.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
 libpeercoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
