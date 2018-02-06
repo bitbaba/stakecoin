@@ -273,7 +273,11 @@ public:
     {
         if (hSocket != INVALID_SOCKET)
         {
+#ifdef WIN32
             closesocket(hSocket);
+#else
+            close(hSocket);
+#endif
             hSocket = INVALID_SOCKET;
         }
         if (pfilter)
