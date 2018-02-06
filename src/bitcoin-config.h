@@ -1,1 +1,0 @@
-/home/harry/workspace/imharrywu/peercoin/src/config/bitcoin-config.h
