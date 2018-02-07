@@ -1,4 +1,9 @@
 *.tar.gz
+
+/built/
+/src/peercoin-cli
+/src/peercoind
+
 depends/sdk-sources
 depends/sources
 dist/
