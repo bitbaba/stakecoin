@@ -111,15 +111,15 @@ sudo apt-get install --no-install-recommends --no-upgrade -qq automake autoconf 
 
 # install:
 if [ -n "$PPA" ]; then 
-	sudo add-apt-repository "$PPA" -y; 
+        add-apt-repository "$PPA" -y;
 fi
 
 if [ -n "$DPKG_ADD_ARCH" ]; then 
-	sudo dpkg --add-architecture "$DPKG_ADD_ARCH" ; 
+        dpkg --add-architecture "$DPKG_ADD_ARCH" ;
 fi
 
 if [ -n "$PACKAGES" ]; then 
-	echo ignore command \`sudo apt-get update\';
+        ignore command \`sudo apt-get update\';
 fi
 
 if [ -n "$PACKAGES" ]; then 
@@ -128,10 +128,6 @@ fi
 
 # before_script:
 unset CC; unset CXX
-
-if [ "$CHECK_DOC" = 1 ]; then 
-	contrib/devtools/check-doc.py; 
-fi
 
 mkdir -p depends/SDKs
 
@@ -144,28 +140,6 @@ if [ -n "$OSX_SDK" -a -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then
 fi
 
 make $MAKEJOBS -C depends HOST=$HOST $DEP_OPTS
-
-# Start xvfb if needed, as documented at https://docs.travis-ci.com/user/gui-and-headless-browsers/#Using-xvfb-to-Run-Tests-That-Require-a-GUI
-if [ "$RUN_TESTS" = "true" -a "${DEP_OPTS#*NO_QT=1}" = "$DEP_OPTS" ]; then 
-	export DISPLAY=:99.0; 
-	/sbin/start-stop-daemon --start --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac; 
-fi
-
-
-#script:
-if [ "$CHECK_DOC" = 1 -a "$TRAVIS_REPO_SLUG" = "bitcoin/bitcoin" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then 
-	while read LINE; do 
-		travis_retry gpg --keyserver hkp://subset.pool.sks-keyservers.net --recv-keys $LINE; 
-	done < contrib/verify-commits/trusted-keys; 
-fi
-
-if [ "$CHECK_DOC" = 1 -a "$TRAVIS_REPO_SLUG" = "bitcoin/bitcoin" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then 
-	git fetch --unshallow; 
-fi
-
-if [ "$CHECK_DOC" = 1 -a "$TRAVIS_REPO_SLUG" = "bitcoin/bitcoin" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then 
-	contrib/verify-commits/verify-commits.sh; 
-fi
 
 export TRAVIS_COMMIT_LOG="$(git log --format=fuller -1)"
 
@@ -184,20 +158,6 @@ if [ -n "$USE_SHELL" ]; then
 else
 	./autogen.sh
 fi
-
-#if [ -d build ]; then
-#	cd build
-#else
-#	mkdir build && cd build
-#fi
-
-#../configure --cache-file=config.cache $BITCOIN_CONFIG_ALL $BITCOIN_CONFIG || ( cat config.log && exit 1)
-
-#make distdir VERSION=$HOST
-
-#cd Peercoin-$HOST
-
-#./configure --cache-file=../config.cache $BITCOIN_CONFIG_ALL $BITCOIN_CONFIG || ( cat config.log && exit 1)
 
 ./configure $BITCOIN_CONFIG_ALL $BITCOIN_CONFIG || ( cat config.log && exit 1)
 
