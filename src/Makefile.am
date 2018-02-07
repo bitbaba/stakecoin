@@ -247,5 +247,6 @@ if EMBEDDED_LEVELDB
 include Makefile.leveldb.include
 endif
 
+if ENABLE_QT
 include Makefile.qt.include
-
+endif
