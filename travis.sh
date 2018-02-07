@@ -12,8 +12,8 @@ export TRAVIS_JOB_NUMBER=JobNo.1
 
 # Matrix
 #matrix="Win32Gui"
-#matrix="bitcoind"
-matrix="Cross-Mac"
+matrix="bitcoind"
+#matrix="Cross-Mac"
 
 # For `matrix="Cross-Mac"'
 # sudo pip install ez_setup
@@ -35,7 +35,7 @@ export BOOST_TEST_RANDOM=$(date +%s)
 export CCACHE_SIZE=100M
 export CCACHE_TEMPDIR=/tmp/.ccache-temp
 export CCACHE_COMPRESS=1
-export BASE_OUTDIR=$HOME/workspace/built
+export BASE_OUTDIR=$PWD/built
 export SDK_URL=https://bitcoincore.org/depends-sources/sdks
 export PYTHON_DEBUG=1
 export WINEDEBUG=fixme-all
@@ -91,14 +91,11 @@ elif [ "$matrix" = "Cross-Mac" ]; then
 elif [ "$matrix" = "bitcoind" ]; then
 	export HOST=x86_64-unknown-linux-gnu 
 	export PACKAGES="bc python3-zmq" 
-	export DEP_OPTS="NO_QT=1 NO_UPNP=1 DEBUG=1" 
+	export DEP_OPTS="NO_QT=1 NO_UPNP=1" 
 	export RUN_TESTS=false
 	export GOAL="install"
 	export USE_SHELL="/bin/bash"
-	# for debug
-	export BITCOIN_CONFIG="--enable-debug --without-gui --without-libs --disable-tests --disable-bench --enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER"
-	# no-debug
-	#export BITCOIN_CONFIG="--enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER"
+	export BITCOIN_CONFIG="--disable-debug --without-libs --without-gui --disable-gui --disable-tests --disable-bench --enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER"
 
 # undefined
 else 
