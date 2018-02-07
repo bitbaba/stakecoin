@@ -129,7 +129,7 @@ fi
 # before_script:
 unset CC; unset CXX
 
-mkdir -p depends/SDKs
+mkdir -p depends/SDKs depends/sources depends/sdk-sources
 
 if [ -n "$OSX_SDK" -a ! -f depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz ]; then 
 	curl --location --fail $SDK_URL/MacOSX${OSX_SDK}.sdk.tar.gz -o depends/sdk-sources/MacOSX${OSX_SDK}.sdk.tar.gz; 
