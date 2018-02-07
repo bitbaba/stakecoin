@@ -1,5 +1,7 @@
 #!/bin/bash
 
+matrix=$1
+
 # Note: remember to switch to sources other than CN, e.g. US(united states) source 
 # and do `apt-get update' before building;
 
@@ -12,7 +14,7 @@ export TRAVIS_JOB_NUMBER=JobNo.1
 
 # Matrix
 #matrix="Win32Gui"
-matrix="bitcoind"
+#matrix="Linux"
 #matrix="Cross-Mac"
 
 # For `matrix="Cross-Mac"'
@@ -87,8 +89,8 @@ elif [ "$matrix" = "Cross-Mac" ]; then
 	export GOAL="deploy"
 	export BITCOIN_CONFIG="--disable-debug --disable-bench --enable-gui --disable-tests --enable-reduce-exports"
 
-# bitcoind
-elif [ "$matrix" = "bitcoind" ]; then
+# Linux
+elif [ "$matrix" = "Linux" ]; then
 	export HOST=x86_64-unknown-linux-gnu 
 	export PACKAGES="bc python3-zmq" 
 	export DEP_OPTS="NO_QT=1 NO_UPNP=1" 
@@ -175,9 +177,6 @@ export OUTDIR=$BASE_OUTDIR/$TRAVIS_PULL_REQUEST/$TRAVIS_JOB_NUMBER-$HOST
 
 export BITCOIN_CONFIG_ALL="--disable-dependency-tracking --prefix=$TRAVIS_BUILD_DIR/depends/$HOST --bindir=$OUTDIR/bin --libdir=$OUTDIR/lib"
 
-echo $BITCOIN_CONFIG_ALL 
-echo $BITCOIN_CONFIG
-
 depends/$HOST/native/bin/ccache --max-size=$CCACHE_SIZE
 
 if [ -n "$USE_SHELL" ]; then
@@ -204,16 +203,6 @@ fi
 
 make $MAKEJOBS $GOAL || ( echo "Build failure. Verbose build follows." && make $GOAL V=1 ; exit 1 )
 
-#export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/depends/$HOST/lib
-
-#if [ "$RUN_TESTS" = "true" ]; then 
-#	make $MAKEJOBS check VERBOSE=1; 
-#fi
-
-#if [ "$RUN_TESTS" = "true" -a -f test/functional/test_runner.py ]; then 
-#	test/functional/test_runner.py --coverage; 
-#fi
-
 #after_script:
-echo $TRAVIS_COMMIT_RANGE
-echo $TRAVIS_COMMIT_LOG
+echo Commit-Range: $TRAVIS_COMMIT_RANGE 
+echo Commit-Log: $TRAVIS_COMMIT_LOG
