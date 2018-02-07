@@ -87,7 +87,7 @@ elif [ "$matrix" = "Cross-Mac" ]; then
 	export OSX_SDK=10.11
 	export RUN_TESTS=false
 	export GOAL="deploy"
-	export BITCOIN_CONFIG="--disable-debug --disable-bench --enable-gui --disable-tests --enable-reduce-exports"
+	export BITCOIN_CONFIG="--enable-gui --disable-tests --disable-debug --disable-bench --enable-reduce-exports"
 
 # Linux
 elif [ "$matrix" = "Linux" ]; then
