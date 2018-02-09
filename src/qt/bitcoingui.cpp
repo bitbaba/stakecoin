@@ -82,8 +82,8 @@ BitcoinGUI::BitcoinGUI(QWidget *parent) :
     this->setStyleSheet(styleSheet);
 
 #ifndef Q_OS_MAC
-    QApplication::setWindowIcon(QIcon(":icons/stakecoin"));
-    setWindowIcon(QIcon(":icons/stakecoin"));
+    QApplication::setWindowIcon(QIcon(":icons/bitcoin"));
+    setWindowIcon(QIcon(":icons/bitcoin"));
 #else
     setUnifiedTitleAndToolBarOnMac(true);
     QApplication::setAttribute(Qt::AA_DontShowIconsInMenus);
@@ -233,7 +233,7 @@ void BitcoinGUI::createActions()
     quitAction->setStatusTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/stakecoin"), tr("&About stakecoin"), this);
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About stakecoin"), this);
     aboutAction->setStatusTip(tr("Show information about stakecoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -242,7 +242,7 @@ void BitcoinGUI::createActions()
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
     optionsAction->setStatusTip(tr("Modify configuration options for stakecoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
-    toggleHideAction = new QAction(QIcon(":/icons/stakecoin"), tr("&Show / Hide"), this);
+    toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     toggleHideAction->setStatusTip(tr("Show or hide the main Window"));
 
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -263,10 +263,10 @@ void BitcoinGUI::createActions()
     openRPCConsoleAction = new QAction(QIcon(":/icons/debugwindow"), tr("&Debug window"), this);
     openRPCConsoleAction->setStatusTip(tr("Open debugging and diagnostic console"));
 
-    openChatroomAction = new QAction(QIcon(":/icons/stakecoin"), tr("&Chatroom"), this);
+    openChatroomAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Chatroom"), this);
     openChatroomAction->setStatusTip(tr("Open https://stakecoin.chat in a web browser."));
 
-    openForumAction = new QAction(QIcon(":/icons/stakecoin"), tr("&Forum"), this);
+    openForumAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Forum"), this);
     openForumAction->setStatusTip(tr("Open https://talk.stakecoin.net in a web browser."));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
@@ -345,10 +345,10 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
         {
             setWindowTitle(windowTitle() + QString(" ") + tr("[testnet]"));
 #ifndef Q_OS_MAC
-            QApplication::setWindowIcon(QIcon(":icons/stakecoin_testnet"));
-            setWindowIcon(QIcon(":icons/stakecoin_testnet"));
+            QApplication::setWindowIcon(QIcon(":icons/bitcoin_testnet"));
+            setWindowIcon(QIcon(":icons/bitcoin_testnet"));
 #else
-            MacDockIconHandler::instance()->setIcon(QIcon(":icons/stakecoin_testnet"));
+            MacDockIconHandler::instance()->setIcon(QIcon(":icons/bitcoin_testnet"));
 #endif
             if(trayIcon)
             {
