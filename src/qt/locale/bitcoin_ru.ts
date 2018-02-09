@@ -275,7 +275,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши биткоины от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -1074,8 +1074,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>Не удаётся запустить peercoin: обработчик click-to-pay</translation>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
+        <translation>Не удаётся запустить stakecoin: обработчик click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -2202,8 +2202,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Отправить команду на -server или peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Отправить команду на -server или stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2223,13 +2223,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Задать pid-файл (по умолчанию: peercoin.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Задать pid-файл (по умолчанию: stakecoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2306,7 +2306,7 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2317,7 +2317,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>%s, вы должны установить опцию rpcpassword в конфигурационном файле:
  %s
 Рекомендуется использовать следующий случайный пароль:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (вам не нужно запоминать этот пароль)
 Имя и пароль ДОЛЖНЫ различаться.

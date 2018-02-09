@@ -180,7 +180,7 @@ int main(int argc, char *argv[])
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
     QApplication::setOrganizationName("Peercoin");
-    QApplication::setOrganizationDomain("peercoin.net");
+    QApplication::setOrganizationDomain("stakecoin.net");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
         QApplication::setApplicationName("Peercoin-Testnet");
     else

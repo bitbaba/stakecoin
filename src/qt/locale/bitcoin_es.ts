@@ -278,8 +278,8 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus peercoins de robo por malware que infecte su sistema.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin se cerrará para finalizar el proceso de cifrado. Recuerde que el cifrado de su monedero no puede proteger totalmente sus stakecoins de robo por malware que infecte su sistema.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1077,8 +1077,8 @@ Dirección: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>No se pudo iniciar peercoin: manejador de pago-al-clic</translation>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
+        <translation>No se pudo iniciar stakecoin: manejador de pago-al-clic</translation>
     </message>
 </context>
 <context>
@@ -2205,8 +2205,8 @@ Dirección: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Envíar comando a -server o peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Envíar comando a -server o stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2228,14 +2228,14 @@ Dirección: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Especificar archivo de configuración (predeterminado: peercoin.conf)
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Especificar archivo de configuración (predeterminado: stakecoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Especificar archivo pid (predeterminado: peercoin.pid)
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Especificar archivo pid (predeterminado: stakecoin.pid)
 </translation>
     </message>
     <message>
@@ -2316,7 +2316,7 @@ Dirección: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2327,7 +2327,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>%s, debe establecer un valor rpcpassword en el archivo de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (no es necesario recordar esta contraseña)
 El nombre de usuario y la contraseña DEBEN NO ser iguales.

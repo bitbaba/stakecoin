@@ -278,8 +278,8 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus peercoins de ser robados por malware que infecte su computador</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin se cerrará para finalizar el proceso de encriptación. Recuerde que encriptar su billetera no protegera completatamente sus stakecoins de ser robados por malware que infecte su computador</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -423,12 +423,12 @@ Eric Young (eay@cryptsoft.com) y UPnP software escrito por Thomas Bernard.</tran
     <message>
         <location line="-347"/>
         <source>Send coins to a Peercoin address</source>
-        <translation>Enviar monedas a una dirección peercoin</translation>
+        <translation>Enviar monedas a una dirección stakecoin</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>Modifica las opciones de configuración de peercoin</translation>
+        <translation>Modifica las opciones de configuración de stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1077,7 +1077,7 @@ Dirección: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2205,8 +2205,8 @@ Dirección: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Envia comando a peercoin lanzado con -server u peercoind
+        <source>Send command to -server or stakecoind</source>
+        <translation>Envia comando a stakecoin lanzado con -server u stakecoind
 </translation>
     </message>
     <message>
@@ -2229,14 +2229,14 @@ Dirección: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Especifica archivo de configuración (predeterminado: peercoin.conf)
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Especifica archivo de configuración (predeterminado: stakecoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Especifica archivo pid (predeterminado: peercoin.pid)
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Especifica archivo pid (predeterminado: stakecoin.pid)
 </translation>
     </message>
     <message>
@@ -2318,7 +2318,7 @@ Dirección: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

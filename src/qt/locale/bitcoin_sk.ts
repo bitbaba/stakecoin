@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou peercoinov pomocou škodlivého software.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou stakecoinov pomocou škodlivého software.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -415,12 +415,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-347"/>
         <source>Send coins to a Peercoin address</source>
-        <translation>Poslať peercoins na adresu</translation>
+        <translation>Poslať stakecoins na adresu</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>Upraviť možnosti nastavenia pre peercoin</translation>
+        <translation>Upraviť možnosti nastavenia pre stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -732,7 +732,7 @@ Adresa: %4</translation>
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou peercoin.</translation>
+        <translation>Vložená adresa &quot;%1&quot; nieje platnou adresou stakecoin.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1068,7 +1068,7 @@ Adresa: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1339,7 +1339,7 @@ Adresa: %4</translation>
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie peercoins</translation>
+        <translation>Potvrdiť odoslanie stakecoins</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2196,8 +2196,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Odoslať príkaz -server alebo peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Odoslať príkaz -server alebo stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2216,13 +2216,13 @@ Adresa: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Určiť súbor s nastaveniami (predvolené: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Určiť súbor s nastaveniami (predvolené: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Určiť súbor pid (predvolené: peercoind.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Určiť súbor pid (predvolené: stakecoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2299,7 +2299,7 @@ Adresa: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

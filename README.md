@@ -3,7 +3,7 @@ Stakecoin Official Development Repo
 ==================================
 
 ### What is Stakecoin?
-[Stakecoin](https://peercoin.net) (abbreviated STC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://stakecoin.net/assets/paper/stakecoin-paper.pdf) as a security model, with a combined [proof-of-stake](https://stakecoin.net/assets/paper/stakecoin-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. Stakecoin is based on [Bitcoin](https://bitcoin.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
+[Stakecoin](https://stakecoin.net) (abbreviated STC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://stakecoin.net/assets/paper/stakecoin-paper.pdf) as a security model, with a combined [proof-of-stake](https://stakecoin.net/assets/paper/stakecoin-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. Stakecoin is based on [Bitcoin](https://bitcoin.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
 
 ### Stakecoin Resources
 * Client and Source:

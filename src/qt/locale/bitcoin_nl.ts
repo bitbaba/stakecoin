@@ -123,7 +123,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Peercoinadressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw peercoins verzendt.</translation>
+        <translation>Dit zijn uw Peercoinadressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw stakecoins verzendt.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw peercoins stelen.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw stakecoins stelen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1074,8 +1074,8 @@ Adres: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>Kan peercoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
+        <translation>Kan stakecoin niet starten: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -2202,8 +2202,8 @@ Adres: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Stuur commando naar -server of peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Stuur commando naar -server of stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2222,14 +2222,14 @@ Adres: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Specificeer configuratiebestand (standaard: peercoin.conf)
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Specificeer configuratiebestand (standaard: stakecoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Specificeer pid-bestand (standaard: peercoind.pid)
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Specificeer pid-bestand (standaard: stakecoind.pid)
 </translation>
     </message>
     <message>
@@ -2307,7 +2307,7 @@ Adres: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2317,7 +2317,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
 </source>
         <translation>%s, u moet een RPC-wachtwoord instellen in het configuratiebestand: %s
 U wordt aangeraden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (u hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en wachtwoord mogen niet hetzelfde zijn.

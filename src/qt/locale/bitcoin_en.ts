@@ -282,8 +282,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -542,7 +542,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Open https://peercoin.chat in a web browser.</source>
+        <source>Open https://stakecoin.chat in a web browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -552,7 +552,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Open https://talk.peercoin.net in a web browser.</source>
+        <source>Open https://talk.stakecoin.net in a web browser.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1600,8 +1600,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.</sourc
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>Cannot start peercoin: click-to-pay handler</translation>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
+        <translation>Cannot start stakecoin: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -2895,7 +2895,7 @@ A standard change address will be used instead.</source>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3426,8 +3426,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or peercoind</source>
-        <translation type="unfinished">Send command to -server or peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation type="unfinished">Send command to -server or stakecoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3491,8 +3491,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation type="unfinished">Specify configuration file (default: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation type="unfinished">Specify configuration file (default: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3506,8 +3506,8 @@ If the file does not exist, create it with owner-readable-only file permissions.
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation type="unfinished">Specify pid file (default: peercoind.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation type="unfinished">Specify pid file (default: stakecoind.pid)</translation>
     </message>
     <message>
         <location line="+1"/>

@@ -19,12 +19,12 @@ endif
 BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
 BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-LIBPEERCOIN_SERVER=libpeercoin_server.a
-LIBPEERCOIN_COMMON=libpeercoin_common.a
-LIBPEERCOIN_CLI=libpeercoin_cli.a
-LIBPEERCOINQT=qt/libpeercoinqt.a
+LIBPEERCOIN_SERVER=libstakecoin_server.a
+LIBPEERCOIN_COMMON=libstakecoin_common.a
+LIBPEERCOIN_CLI=libstakecoin_cli.a
+LIBPEERCOINQT=qt/libstakecoinqt.a
 if ENABLE_WALLET
-LIBPEERCOIN_WALLET=libpeercoin_wallet.a
+LIBPEERCOIN_WALLET=libstakecoin_wallet.a
 endif
 
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
@@ -42,11 +42,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += peercoind
+  bin_PROGRAMS += stakecoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += peercoin-cli
+  bin_PROGRAMS += stakecoin-cli
 endif
 
 .PHONY: FORCE
@@ -107,12 +107,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(abs_top_builddir)/src/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libpeercoin_common_a-version.$(OBJEXT): obj/build.h
+libstakecoin_common_a-version.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
-libpeercoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libpeercoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libpeercoin_server_a_SOURCES = \
+libstakecoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libstakecoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libstakecoin_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
   rpcserver.cpp \
@@ -137,9 +137,9 @@ libpeercoin_server_a_SOURCES = \
 
 # wallet: shared between bitcoind and bitcoin-qt, but only linked
 # when wallet enabled  
-libpeercoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libpeercoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libpeercoin_wallet_a_SOURCES = \
+libstakecoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libstakecoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libstakecoin_wallet_a_SOURCES = \
   db.cpp \
   rpcdump.cpp \
   rpcmining.cpp \
@@ -153,9 +153,9 @@ libpeercoin_wallet_a_SOURCES = \
 
 
 # common: shared between bitcoind, and bitcoin-qt and non-server tools
-libpeercoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libpeercoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libpeercoin_common_a_SOURCES = \
+libstakecoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libstakecoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libstakecoin_common_a_SOURCES = \
   hash.cpp \
   key.cpp \
   netbase.cpp \
@@ -168,26 +168,26 @@ libpeercoin_common_a_SOURCES = \
 
 
 # cli: shared between bitcoin-cli and bitcoin-qt
-libpeercoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libpeercoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libpeercoin_cli_a_SOURCES = \
+libstakecoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libstakecoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libstakecoin_cli_a_SOURCES = \
   rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libpeercoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
+nodist_libstakecoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# peercoind binary #
-peercoind_SOURCES = bitcoind.cpp
-peercoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-peercoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-peercoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# stakecoind binary #
+stakecoind_SOURCES = bitcoind.cpp
+stakecoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+stakecoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+stakecoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-peercoind_SOURCES += bitcoind-res.rc
+stakecoind_SOURCES += bitcoind-res.rc
 endif
 
-peercoind_LDADD = \
+stakecoind_LDADD = \
   $(LIBPEERCOIN_SERVER) \
   $(LIBPEERCOIN_COMMON) \
   $(LIBPEERCOIN_WALLET) \
@@ -195,23 +195,23 @@ peercoind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV) 
 
-peercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+stakecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-peercoin_cli_SOURCES = bitcoin-cli.cpp
-peercoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-peercoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-peercoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+stakecoin_cli_SOURCES = bitcoin-cli.cpp
+stakecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+stakecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+stakecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-peercoin_cli_SOURCES += bitcoin-cli-res.rc
+stakecoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-peercoin_cli_LDADD = \
+stakecoin_cli_LDADD = \
   $(LIBPEERCOIN_CLI) \
   $(LIBPEERCOIN_COMMON)
 
-peercoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+stakecoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 
 
 CLEANFILES = $(EXTRA_LIBRARIES)

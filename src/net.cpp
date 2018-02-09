@@ -411,7 +411,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
 void ThreadGetMyExternalIP(void* parg)
 {
     // Make this thread recognisable as the external IP detection thread
-    RenameThread("peercoin-ext-ip");
+    RenameThread("stakecoin-ext-ip");
 
     CNetAddr addrLocalHost;
     if (GetMyExternalIP(addrLocalHost))
@@ -1206,13 +1206,13 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"seedpeercoin", "seed.peercoin.net"},
+    {"seedstakecoin", "seed.stakecoin.net"},
     {"seed", "seed.ppcoin.net"},
     {NULL, NULL}
 };
 
 static const char *strTestNetDNSSeed[][2] = {
-    {"tseedpeercoin", "tseed.peercoin.net"},
+    {"tseedstakecoin", "tseed.stakecoin.net"},
     {NULL, NULL}
 };
 

@@ -166,8 +166,8 @@ std::string HelpMessage(HelpMessageMode hmm)
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: peercoin.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: peercoind.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: stakecoin.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: stakecoind.pid)") + "\n" +
         "  -gen                   " + _("Generate coins (default: 0)") + "\n" +
         "  -nominting             " + _("Disable minting of POS blocks") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
@@ -286,7 +286,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("peercoin-loadblk");
+    RenameThread("stakecoin-loadblk");
 
     // -reindex
     if (fReindex) {

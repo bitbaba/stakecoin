@@ -276,7 +276,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -1075,7 +1075,7 @@ Adress: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation>Kan inte starta bitcin: klicka-och-betala handhavare</translation>
     </message>
 </context>
@@ -2203,8 +2203,8 @@ Adress: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Skicka kommando till -server eller peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Skicka kommando till -server eller stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2223,13 +2223,13 @@ Adress: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Ange konfigurationsfil (förvalt: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Ange konfigurationsfil (förvalt: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Ange pid fil (förvalt: peercoind.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Ange pid fil (förvalt: stakecoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2306,7 +2306,7 @@ Adress: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2317,7 +2317,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
 %s
 Det är rekommenderat att använda följande slumpade lösenord:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg lösenordet)
 Användarnamnet och lösenordet FÅR INTE bara detsamma.
@@ -2349,7 +2349,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@fo
     <message>
         <location line="+4"/>
         <source>Error: This transaction requires a transaction fee of at least %s because of its amount, complexity, or use of recently received funds!</source>
-        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna peercoins!</translation>
+        <translation>Fel: Denna transaktion kräver en transaktionsavgift på minst %s på grund av dess storlek, komplexitet, eller användning av senast mottagna stakecoins!</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2874,7 +2874,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@fo
     <message>
         <location line="-6"/>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med peercoins</translation>
+        <translation>Otillräckligt med stakecoins</translation>
     </message>
     <message>
         <location line="+10"/>

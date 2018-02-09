@@ -8,16 +8,16 @@ define(_CLIENT_VERSION_IS_RELEASE, false)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Peercoin]])
-AC_INIT([Peercoin],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bitbaba/stakecoin/issues],[peercoin],[https://bitbaba.com/])
+AC_INIT([Peercoin],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/bitbaba/stakecoin/issues],[stakecoin],[https://bitbaba.com/])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=peercoind
-BITCOIN_GUI_NAME=peercoin-qt
-BITCOIN_CLI_NAME=peercoin-cli
-BITCOIN_TX_NAME=peercoin-tx
+BITCOIN_DAEMON_NAME=stakecoind
+BITCOIN_GUI_NAME=stakecoin-qt
+BITCOIN_CLI_NAME=stakecoin-cli
+BITCOIN_TX_NAME=stakecoin-tx
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR(ARFLAGS, [Flags for the archiver, defaults to <cr> if not set])

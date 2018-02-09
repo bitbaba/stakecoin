@@ -270,8 +270,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše peercoine od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>Peercoin će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše stakecoine od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -415,12 +415,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-347"/>
         <source>Send coins to a Peercoin address</source>
-        <translation>Slanje novca na peercoin adresu</translation>
+        <translation>Slanje novca na stakecoin adresu</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>Promijeni postavke konfiguracije za peercoin</translation>
+        <translation>Promijeni postavke konfiguracije za stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -733,7 +733,7 @@ Adresa:%4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Upisana adresa &quot;%1&quot; nije valjana peercoin adresa.</translation>
+        <translation>Upisana adresa &quot;%1&quot; nije valjana stakecoin adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -940,7 +940,7 @@ Adresa:%4
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Izaberite željeni najmanji dio peercoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
+        <translation>Izaberite željeni najmanji dio stakecoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1069,7 +1069,7 @@ Adresa:%4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2197,8 +2197,8 @@ Adresa:%4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Pošalji komandu usluzi -server ili peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Pošalji komandu usluzi -server ili stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adresa:%4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Odredi konfiguracijsku datoteku (ugrađeni izbor: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Odredi proces ID datoteku (ugrađeni izbor: peercoin.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Odredi proces ID datoteku (ugrađeni izbor: stakecoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,7 +2300,7 @@ Adresa:%4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

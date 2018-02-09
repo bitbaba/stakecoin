@@ -63,7 +63,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>این آدرسها، آدرسهای peercoin شما برای دریافت وجوه هستند. شما ممکن است آدرسهای متفاوت را به هر گیرنده اختصاص دهید که بتوانید مواردی که پرداخت می کنید را پیگیری نمایید</translation>
+        <translation>این آدرسها، آدرسهای stakecoin شما برای دریافت وجوه هستند. شما ممکن است آدرسهای متفاوت را به هر گیرنده اختصاص دهید که بتوانید مواردی که پرداخت می کنید را پیگیری نمایید</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -103,7 +103,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
-        <translation>یک پیام را برای حصول اطمینان از ورود به سیستم با آدرس peercoin مشخص، شناسایی کنید</translation>
+        <translation>یک پیام را برای حصول اطمینان از ورود به سیستم با آدرس stakecoin مشخص، شناسایی کنید</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -245,7 +245,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR PEERCOINS&lt;/b&gt;!</source>
-        <translation>هشدار: اگر wallet رمزگذاری شود و شما passphrase را گم کنید شما همه اطلاعات peercoin را از دست خواهید داد.</translation>
+        <translation>هشدار: اگر wallet رمزگذاری شود و شما passphrase را گم کنید شما همه اطلاعات stakecoin را از دست خواهید داد.</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -271,7 +271,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
         <translation>Peercoin هم اکنون بسته می‌شود تا فرایند رمزگذاری را تمام کند. به خاطر داشته باشید که رمزگذاری کیف پولتان نمی‌تواند به طور کامل بیتیکون‌های شما را در برابر دزدیده شدن توسط بدافزارهایی که رایانه شما را آلوده می‌کنند، محافظت نماید.</translation>
     </message>
     <message>
@@ -421,7 +421,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>انتخابهای پیکربندی را برای peercoin اصلاح کن</translation>
+        <translation>انتخابهای پیکربندی را برای stakecoin اصلاح کن</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -477,7 +477,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+22"/>
         <source>&amp;About Peercoin</source>
-        <translation>در مورد peercoin</translation>
+        <translation>در مورد stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -733,7 +733,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>آدرس وارد شده %1 یک ادرس صحیح peercoin نیست</translation>
+        <translation>آدرس وارد شده %1 یک ادرس صحیح stakecoin نیست</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -815,7 +815,7 @@ Address: %4
     <message>
         <location line="+31"/>
         <source>Automatically start Peercoin after logging in to the system.</source>
-        <translation>در زمان ورود به سیستم به صورت خودکار peercoin را اجرا کن</translation>
+        <translation>در زمان ورود به سیستم به صورت خودکار stakecoin را اجرا کن</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -825,7 +825,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>&amp;Start Peercoin on system login</source>
-        <translation>اجرای peercoin در زمان ورود به سیستم</translation>
+        <translation>اجرای stakecoin در زمان ورود به سیستم</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -1016,7 +1016,7 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش داده شده روزآمد نیستند.wallet  شما به صورت خودکار با شبکه peercoin بعد از برقراری اتصال روزآمد می شود اما این فرایند هنوز کامل نشده است.</translation>
+        <translation>اطلاعات نمایش داده شده روزآمد نیستند.wallet  شما به صورت خودکار با شبکه stakecoin بعد از برقراری اتصال روزآمد می شود اما این فرایند هنوز کامل نشده است.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,7 +1069,7 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2200,7 +2200,7 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
+        <source>Send command to -server or stakecoind</source>
         <translation>ارسال فرمان به سرور یا باتکویین</translation>
     </message>
     <message>
@@ -2220,13 +2220,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>(: peercoin.confپیش فرض: )فایل تنظیمی خاص </translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>(: stakecoin.confپیش فرض: )فایل تنظیمی خاص </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>(peercoind.pidپیش فرض : ) فایل پید خاص</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>(stakecoind.pidپیش فرض : ) فایل پید خاص</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2303,7 +2303,7 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2371,7 +2371,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
-        <translation>هشدار: لطفا زمان و تاریخ رایانه خود را تصحیح نمایید! اگر ساعت رایانه شما اشتباه باشد peercoin ممکن است صحیح کار نکند</translation>
+        <translation>هشدار: لطفا زمان و تاریخ رایانه خود را تصحیح نمایید! اگر ساعت رایانه شما اشتباه باشد stakecoin ممکن است صحیح کار نکند</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2621,7 +2621,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+5"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
-        <translation>گزینه ssl (به ویکیpeercoin برای راهنمای راه اندازی ssl مراجعه شود)</translation>
+        <translation>گزینه ssl (به ویکیstakecoin برای راهنمای راه اندازی ssl مراجعه شود)</translation>
     </message>
     <message>
         <location line="+1"/>

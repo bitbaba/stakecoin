@@ -84,7 +84,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin URI
-    if(!uri.isValid() || (uri.scheme() != QString("peercoin") && uri.scheme() != QString("ppcoin")))
+    if(!uri.isValid() || (uri.scheme() != QString("stakecoin") && uri.scheme() != QString("ppcoin")))
         return false;
 
     SendCoinsRecipient rv;
@@ -138,9 +138,9 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //
     //    Cannot handle this later, because bitcoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("peercoin://"))
+    if(uri.startsWith("stakecoin://"))
     {
-        uri.replace(0, 11, "peercoin:");
+        uri.replace(0, 11, "stakecoin:");
     }
     if(uri.startsWith("ppcoin://"))
     {
@@ -445,7 +445,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
     header = tr("Peercoin-Qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  peercoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  stakecoin-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage(HMM_BITCOIN_QT));
 

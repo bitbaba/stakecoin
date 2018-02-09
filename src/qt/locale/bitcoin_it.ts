@@ -275,7 +275,7 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
         <translation>Peercoin verrà ora chiuso per finire il processo di crittazione. Ricorda che criptare il tuo portamonete non può fornire una protezione totale contro furti causati da malware che dovessero infettare il tuo computer.</translation>
     </message>
     <message>
@@ -420,12 +420,12 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     <message>
         <location line="-347"/>
         <source>Send coins to a Peercoin address</source>
-        <translation>Invia monete ad un indirizzo peercoin</translation>
+        <translation>Invia monete ad un indirizzo stakecoin</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>Modifica configurazione opzioni per peercoin</translation>
+        <translation>Modifica configurazione opzioni per stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -739,7 +739,7 @@ Indirizzo: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo peercoin valido.</translation>
+        <translation>L&apos;indirizzo inserito &quot;%1&quot; non è un indirizzo stakecoin valido.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,7 +1076,7 @@ Indirizzo: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1347,7 +1347,7 @@ Indirizzo: %4
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Conferma la spedizione di peercoin</translation>
+        <translation>Conferma la spedizione di stakecoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1392,7 +1392,7 @@ Indirizzo: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni peercoin nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i peercoin sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
+        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni stakecoin nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i stakecoin sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
     </message>
 </context>
 <context>
@@ -1603,7 +1603,7 @@ Indirizzo: %4
         <location line="-81"/>
         <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
-        <translation>L&apos;indirizzo peercoin inserito non è associato a nessuna chiave.</translation>
+        <translation>L&apos;indirizzo stakecoin inserito non è associato a nessuna chiave.</translation>
     </message>
     <message>
         <location line="-73"/>
@@ -1791,7 +1791,7 @@ Indirizzo: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Bisogna attendere 120 blocchi prima di spendere I peercoin generati. Quando è stato generato questo blocco, è stato trasmesso alla rete per aggiungerlo alla catena di blocchi. Se non riesce a entrare nella catena, verrà modificato in &quot;non accettato&quot; e non sarà spendibile. Questo può accadere a volte, se un altro nodo genera un blocco entro pochi secondi del tuo.</translation>
+        <translation>Bisogna attendere 120 blocchi prima di spendere I stakecoin generati. Quando è stato generato questo blocco, è stato trasmesso alla rete per aggiungerlo alla catena di blocchi. Se non riesce a entrare nella catena, verrà modificato in &quot;non accettato&quot; e non sarà spendibile. Questo può accadere a volte, se un altro nodo genera un blocco entro pochi secondi del tuo.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2204,8 +2204,8 @@ Indirizzo: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Manda il comando a -server o peercoind
+        <source>Send command to -server or stakecoind</source>
+        <translation>Manda il comando a -server o stakecoind
 </translation>
     </message>
     <message>
@@ -2228,14 +2228,14 @@ Indirizzo: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Specifica il file di configurazione (di default: peercoin.conf)
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Specifica il file di configurazione (di default: stakecoin.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Specifica il file pid (default: peercoind.pid)
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Specifica il file pid (default: stakecoind.pid)
 </translation>
     </message>
     <message>
@@ -2317,7 +2317,7 @@ Indirizzo: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2345,7 +2345,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni peercoin nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i peercoin sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
+        <translation>Errore: la transazione è stata rifiutata. Ciò accade se alcuni stakecoin nel portamonete sono stati già spesi, ad esempio se è stata usata una copia del file wallet.dat e i stakecoin sono stati spesi dalla copia ma non segnati come spesi qui.</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2505,7 +2505,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     <message>
         <location line="+1"/>
         <source>Failed to write to coin database</source>
-        <translation>Scrittura nel database dei peercoin fallita</translation>
+        <translation>Scrittura nel database dei stakecoin fallita</translation>
     </message>
     <message>
         <location line="+1"/>

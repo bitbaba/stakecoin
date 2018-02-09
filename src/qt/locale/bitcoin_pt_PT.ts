@@ -275,8 +275,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your peercoins from being stolen by malware infecting your computer.</source>
-        <translation>O cliente Peercoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus peercoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
+        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>O cliente Peercoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus stakecoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -420,12 +420,12 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     <message>
         <location line="-347"/>
         <source>Send coins to a Peercoin address</source>
-        <translation>Enviar moedas para um endereço peercoin</translation>
+        <translation>Enviar moedas para um endereço stakecoin</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Peercoin</source>
-        <translation>Modificar opções de configuração para peercoin</translation>
+        <translation>Modificar opções de configuração para stakecoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -738,7 +738,7 @@ Endereço: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>O endereço introduzido &quot;%1&quot; não é um endereço peercoin válido.</translation>
+        <translation>O endereço introduzido &quot;%1&quot; não é um endereço stakecoin válido.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -850,7 +850,7 @@ Endereço: %4
     <message>
         <location line="+6"/>
         <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente peercoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <translation>Abrir a porta do cliente stakecoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1074,8 +1074,8 @@ Endereço: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start peercoin: click-to-pay handler</source>
-        <translation>Impossível começar o modo clicar-para-pagar com peercoin:</translation>
+        <source>Cannot start stakecoin: click-to-pay handler</source>
+        <translation>Impossível começar o modo clicar-para-pagar com stakecoin:</translation>
     </message>
 </context>
 <context>
@@ -2202,8 +2202,8 @@ Endereço: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or peercoind</source>
-        <translation>Enviar comando para -server ou peercoind</translation>
+        <source>Send command to -server or stakecoind</source>
+        <translation>Enviar comando para -server ou stakecoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2222,13 +2222,13 @@ Endereço: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: peercoin.conf)</source>
-        <translation>Especificar ficheiro de configuração (por defeito: peercoin.conf)</translation>
+        <source>Specify configuration file (default: stakecoin.conf)</source>
+        <translation>Especificar ficheiro de configuração (por defeito: stakecoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: peercoind.pid)</source>
-        <translation>Especificar ficheiro pid (por defeito: peercoind.pid)</translation>
+        <source>Specify pid file (default: stakecoind.pid)</source>
+        <translation>Especificar ficheiro pid (por defeito: stakecoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2305,7 +2305,7 @@ Endereço: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -2316,7 +2316,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
         <translation>%s, deverá definir rpcpassword no ficheiro de configuração :
  %s
 É recomendado que use a seguinte palavra-passe aleatória:
-rpcuser=peercoinrpc
+rpcuser=stakecoinrpc
 rpcpassword=%s
 (não precisa recordar esta palavra-passe)
 O nome de utilizador e password NÃO DEVEM ser iguais.
