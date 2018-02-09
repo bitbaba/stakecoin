@@ -174,7 +174,7 @@ PEERCOIN_QT_H = \
   qt/walletview.h
 
 RES_ICONS = \
-  qt/res/icons/stakecoin.png \
+  qt/res/icons/bitcoin.png \
   qt/res/icons/address-book.png \
   qt/res/icons/quit.png \
   qt/res/icons/send.png \
@@ -214,7 +214,7 @@ RES_ICONS = \
   qt/res/icons/filesave.png \
   qt/res/icons/qrcode.png \
   qt/res/icons/debugwindow.png \
-  qt/res/icons/stakecoin.ico \
+  qt/res/icons/bitcoin.ico \
   qt/res/icons/bitcoin_testnet.ico
 
 PEERCOIN_QT_CPP = \
