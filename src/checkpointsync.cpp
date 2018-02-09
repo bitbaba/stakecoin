@@ -1,4 +1,4 @@
-// Copyright (c) 2012-2017 The Peercoin developers
+// Copyright (c) 2012-2017 The stakecoin developers
 // Distributed under conditional MIT/X11 software license,
 // see the accompanying file COPYING
 //

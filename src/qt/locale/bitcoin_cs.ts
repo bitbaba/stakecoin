@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Peercoin</source>
-        <translation>O Peercoinu</translation>
+        <source>About stakecoin</source>
+        <translation>O stakecoinu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Peercoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Peercoin&lt;/b&gt; verze</translation>
+        <source>&lt;b&gt;stakecoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;stakecoin&lt;/b&gt; verze</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Peercoin developers</source>
-        <translation>Vývojáři Peercoinu</translation>
+        <source>The stakecoin developers</source>
+        <translation>Vývojáři stakecoinu</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Peercoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tohle jsou tvé Peercoinové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
+        <source>These are your stakecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tohle jsou tvé stakecoinové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Peercoin address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem Peercoinové adresy</translation>
+        <source>Sign a message to prove you own a stakecoin address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem stakecoinové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Peercoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Peercoinovou adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified stakecoin address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou stakecoinovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Peercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé Peercoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your stakecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé stakecoinové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Peercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
-        <translation>Peercoin se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých stakecoinů malwarem, kterým se může počítač nakazit.</translation>
+        <source>stakecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your stakecoins from being stolen by malware infecting your computer.</source>
+        <translation>stakecoin se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých stakecoinů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Peercoin</source>
-        <translation>Zobraz informace o Peercoinu</translation>
+        <source>Show information about stakecoin</source>
+        <translation>Zobraz informace o stakecoinu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Peercoin address</source>
-        <translation>Pošli mince na Peercoinovou adresu</translation>
+        <source>Send coins to a stakecoin address</source>
+        <translation>Pošli mince na stakecoinovou adresu</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Peercoin</source>
-        <translation>Uprav nastavení Peercoinu</translation>
+        <source>Modify configuration options for stakecoin</source>
+        <translation>Uprav nastavení stakecoinu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Peercoin</source>
-        <translation>Peercoin</translation>
+        <source>stakecoin</source>
+        <translation>stakecoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Peercoin</source>
-        <translation>O &amp;Peercoinu</translation>
+        <source>&amp;About stakecoin</source>
+        <translation>O &amp;stakecoinu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Peercoin addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými Peercoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your stakecoin addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými stakecoinovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Peercoin addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými Peercoinovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified stakecoin addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými stakecoinovými adresami</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+47"/>
-        <source>Peercoin client</source>
-        <translation>Peercoin klient</translation>
+        <source>stakecoin client</source>
+        <translation>stakecoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Peercoin network</source>
-        <translation><numerusform>%n aktivní spojení do Peercoinové sítě</numerusform><numerusform>%n aktivní spojení do Peercoinové sítě</numerusform><numerusform>%n aktivních spojení do Peercoinové sítě</numerusform></translation>
+        <source>%n active connection(s) to stakecoin network</source>
+        <translation><numerusform>%n aktivní spojení do stakecoinové sítě</numerusform><numerusform>%n aktivní spojení do stakecoinové sítě</numerusform><numerusform>%n aktivních spojení do stakecoinové sítě</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresa: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Peercoin address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Peercoinová adresa nebo poškozené parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid stakecoin address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná stakecoinová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Peercoin can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. Peercoin nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <source>A fatal error occurred. stakecoin can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. stakecoin nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Peercoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná Peercoinová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid stakecoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná stakecoinová adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresa: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Peercoin-Qt</source>
-        <translation>Peercoin-Qt</translation>
+        <source>stakecoin-Qt</source>
+        <translation>stakecoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,8 +819,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Peercoin after logging in to the system.</source>
-        <translation>Automaticky spustí Peercoin po přihlášení do systému.</translation>
+        <source>Automatically start stakecoin after logging in to the system.</source>
+        <translation>Automaticky spustí stakecoin po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -829,8 +829,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Peercoin on system login</source>
-        <translation>S&amp;pustit Peercoin po přihlášení do systému</translation>
+        <source>&amp;Start stakecoin on system login</source>
+        <translation>S&amp;pustit stakecoin po přihlášení do systému</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -849,7 +849,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Peercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the stakecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -859,8 +859,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Peercoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připojí se do Peercoinové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
+        <source>Connect to the stakecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připojí se do stakecoinové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -934,8 +934,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Peercoin.</source>
-        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování Peercoinu.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting stakecoin.</source>
+        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování stakecoinu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -949,7 +949,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Peercoin addresses in the transaction list or not.</source>
+        <source>Whether to show stakecoin addresses in the transaction list or not.</source>
         <translation>Zda ukazovat stakecoinové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
@@ -1001,8 +1001,8 @@ Adresa: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Peercoin.</source>
-        <translation>Nastavení se projeví až po restartování Peercoinu.</translation>
+        <source>This setting will take effect after restarting stakecoin.</source>
+        <translation>Nastavení se projeví až po restartování stakecoinu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1020,8 +1020,8 @@ Adresa: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Peercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s Peercoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the stakecoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s stakecoinovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1224,8 +1224,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Peercoin-Qt help message to get a list with possible Peercoin command-line options.</source>
-        <translation>Seznam parametrů Peercoinu pro příkazovou řádku získáš v nápovědě Peercoinu Qt.</translation>
+        <source>Show the stakecoin-Qt help message to get a list with possible stakecoin command-line options.</source>
+        <translation>Seznam parametrů stakecoinu pro příkazovou řádku získáš v nápovědě stakecoinu Qt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1244,13 +1244,13 @@ Adresa: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Peercoin - Debug window</source>
-        <translation>Peercoin - ladicí okno</translation>
+        <source>stakecoin - Debug window</source>
+        <translation>stakecoin - ladicí okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Peercoin Core</source>
-        <translation>Jádro Peercoinu</translation>
+        <source>stakecoin Core</source>
+        <translation>Jádro stakecoinu</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1259,8 +1259,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Peercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři soubor s ladicími záznamy Peercoinu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
+        <source>Open the stakecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otevři soubor s ladicími záznamy stakecoinu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1269,8 +1269,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Peercoin RPC console.</source>
-        <translation>Vítej v Peercoinové RPC konzoli.</translation>
+        <source>Welcome to the stakecoin RPC console.</source>
+        <translation>Vítej v stakecoinové RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1453,8 +1453,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Zadej Peercoinovou adresu</translation>
+        <source>Enter a stakecoin address</source>
+        <translation>Zadej stakecoinovou adresu</translation>
     </message>
 </context>
 <context>
@@ -1518,8 +1518,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Peercoin address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této Peercoinové adresy</translation>
+        <source>Sign the message to prove you own this stakecoin address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této stakecoinové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1554,8 +1554,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Peercoin address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Peercoinovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified stakecoin address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou stakecoinovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,8 +1570,8 @@ Adresa: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Peercoin address</source>
-        <translation>Zadej Peercoinovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <source>Enter a stakecoin address</source>
+        <translation>Zadej stakecoinovou adresu (např. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1580,8 +1580,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Peercoin signature</source>
-        <translation>Vlož Peercoinový podpis</translation>
+        <source>Enter stakecoin signature</source>
+        <translation>Vlož stakecoinový podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1654,8 +1654,8 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Peercoin developers</source>
-        <translation>Vývojáři Peercoinu</translation>
+        <source>The stakecoin developers</source>
+        <translation>Vývojáři stakecoinu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2189,11 +2189,11 @@ Adresa: %4
     </message>
 </context>
 <context>
-    <name>Peercoin-core</name>
+    <name>stakecoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Peercoin version</source>
-        <translation>Verze Peercoinu</translation>
+        <source>stakecoin version</source>
+        <translation>Verze stakecoinu</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2311,7 +2311,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;stakecoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíš nastavit rpcpassword v konfiguračním souboru:
 %s
@@ -2322,7 +2322,7 @@ rpcpassword=%s
 rpcuser a rpcpassword NESMÍ být stejné.
 Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl číst pouze vlastník.
 Je také doporučeno si nastavit alertnotify, abys byl upozorněn na případné problémy;
-například: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo.com
+například: alertnotify=echo %%s | mail -s &quot;stakecoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2337,8 +2337,8 @@ například: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Peercoin is probably already running.</source>
-        <translation>Nedaří se mi získat zámek na datový adresář %s. Peercoin pravděpodobně už jednou běží.</translation>
+        <source>Cannot obtain a lock on data directory %s. stakecoin is probably already running.</source>
+        <translation>Nedaří se mi získat zámek na datový adresář %s. stakecoin pravděpodobně už jednou běží.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2382,8 +2382,8 @@ například: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Peercoin will not work properly.</source>
-        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Peercoin nebude fungovat správně.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong stakecoin will not work properly.</source>
+        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, stakecoin nebude fungovat správně.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2822,13 +2822,13 @@ například: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Peercoin</source>
-        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi Peercoinu</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of stakecoin</source>
+        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi stakecoinu</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Peercoin to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Peercoin, aby se operace dokončila</translation>
+        <source>Wallet needed to be rewritten: restart stakecoin to complete</source>
+        <translation>Soubor s peněženkou potřeboval přepsat: restartuj stakecoin, aby se operace dokončila</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2887,8 +2887,8 @@ například: alertnotify=echo %%s | mail -s &quot;Peercoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Peercoin is probably already running.</source>
-        <translation>Nedaří se mi připojit na %s na tomhle počítači. Peercoin už pravděpodobně jednou běží.</translation>
+        <source>Unable to bind to %s on this computer. stakecoin is probably already running.</source>
+        <translation>Nedaří se mi připojit na %s na tomhle počítači. stakecoin už pravděpodobně jednou běží.</translation>
     </message>
     <message>
         <location line="+64"/>
