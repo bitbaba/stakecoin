@@ -183,9 +183,6 @@ Array RPCConvertValues(const std::string &strMethod, const std::vector<std::stri
     if (strMethod == "importprivkey"          && n > 2) ConvertTo<bool>(params[2]);
     if (strMethod == "listminting"            && n > 0) ConvertTo<boost::int64_t>(params[0]);
     if (strMethod == "listminting"            && n > 1) ConvertTo<boost::int64_t>(params[1]);
-#ifdef TESTING
-    if (strMethod == "timetravel"             && n > 0) ConvertTo<boost::int64_t>(params[0]);
-#endif
     return params;
 }
 

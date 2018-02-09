@@ -1036,12 +1036,12 @@ void ThreadSocketHandler()
                     SocketSendData(pnode);
             }
 
-#ifndef TESTING
             //
             // Inactivity checking
             //
             if (pnode->vSendMsg.empty())
                 pnode->nLastSendEmpty = GetTime();
+
             if (GetTime() - pnode->nTimeConnected > 60)
             {
                 if (pnode->nLastRecv == 0 || pnode->nLastSend == 0)
@@ -1060,7 +1060,6 @@ void ThreadSocketHandler()
                     pnode->fDisconnect = true;
                 }
             }
-#endif
         }
         {
             LOCK(cs_vNodes);

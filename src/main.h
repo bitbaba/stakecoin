@@ -122,10 +122,6 @@ extern bool fBenchmark;
 extern int nScriptCheckThreads;
 extern bool fTxIndex;
 extern unsigned int nCoinCacheSize;
-#ifdef TESTING
-extern uint256 hashSingleStakeBlock;
-extern int nBlocksToIgnore;
-#endif
 
 // Settings
 extern int64 nTransactionFee;
@@ -207,11 +203,7 @@ bool IsInitialBlockDownload();
 std::string GetWarnings(std::string strFor);
 uint256 WantedByOrphan(const CBlock* pblockOrphan);
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake);
-#ifdef TESTING
-void BitcoinMiner(CWallet *pwallet, bool fProofOfStake, bool fGenerateSingleBlock = false);
-#else
 void BitcoinMiner(CWallet *pwallet, bool fProofOfStake);
-#endif
 /** Retrieve a transaction (from memory pool, or from disk, if possible) */
 bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, bool fAllowSlow = false);
 /** Connect/disconnect blocks until pindexNew is the new tip of the active block chain */
