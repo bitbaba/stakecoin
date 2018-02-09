@@ -493,7 +493,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // 1-satoshi-fee transactions. It should be set above the real
     // cost to you of processing a transaction.
     //
-    // ppcoin: -mintxfee and -minrelaytxfee options of bitcoin disabled
+    // stakecoin: -mintxfee and -minrelaytxfee options of bitcoin disabled
     // fixed min fees defined in MIN_TX_FEE and MIN_RELAY_TX_FEE
 
     if (mapArgs.count("-paytxfee"))
@@ -504,7 +504,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             InitWarning(_("Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction."));
     }
 
-    if (mapArgs.count("-checkpointkey")) // ppcoin: checkpoint master priv key
+    if (mapArgs.count("-checkpointkey")) // stakecoin: checkpoint master priv key
     {
         if (!SetCheckpointPrivKey(GetArg("-checkpointkey", "")))
             return InitError(_("Unable to sign checkpoint, wrong checkpointkey?"));
@@ -995,7 +995,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // Generate coins in the background
     GenerateBitcoins(GetBoolArg("-gen", false), pwalletMain);
 
-    // ppcoin: mint proof-of-stake blocks in the background
+    // stakecoin: mint proof-of-stake blocks in the background
     MintStake(threadGroup, pwalletMain);
 
     // ********************************************************* Step 12: finished

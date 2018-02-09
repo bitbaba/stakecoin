@@ -1,5 +1,5 @@
 /*
- * Qt4 ppcoin GUI.
+ * Qt4 stakecoin GUI.
  *
  * W.J. van der Laan 2011-2012
  * The Bitcoin developers 2011-2012

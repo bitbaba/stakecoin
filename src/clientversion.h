@@ -23,7 +23,7 @@
 
 #endif //HAVE_CONFIG_H
 
-// ppcoin version - intended for display purpose ONLY
+// stakecoin version - intended for display purpose ONLY
 #define PEERCOIN_VERSION_MAJOR       0
 #define PEERCOIN_VERSION_MINOR       6
 #define PEERCOIN_VERSION_REVISION    2

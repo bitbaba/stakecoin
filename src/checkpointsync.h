@@ -37,7 +37,7 @@ bool IsMatureSyncCheckpoint();
 bool IsSyncCheckpointTooOld(unsigned int nSeconds);
 uint256 WantedByOrphan(const CBlock* pblockOrphan);
 
-// Synchronized checkpoint (introduced first in ppcoin)
+// Synchronized checkpoint (introduced first in stakecoin)
 class CUnsignedSyncCheckpoint
 {
 public:

@@ -1082,7 +1082,7 @@ boost::filesystem::path GetOldDefaultDataDir()
     // Windows < Vista: C:\Documents and Settings\Username\Application Data\PPCoin
     // Windows >= Vista: C:\Users\Username\AppData\Roaming\PPCoin
     // Mac: ~/Library/Application Support/PPCoin
-    // Unix: ~/.ppcoin
+    // Unix: ~/.stakecoin
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "PPCoin";
@@ -1100,7 +1100,7 @@ boost::filesystem::path GetOldDefaultDataDir()
     return pathRet / "PPCoin";
 #else
     // Unix
-    return pathRet / ".ppcoin";
+    return pathRet / ".stakecoin";
 #endif
 #endif
 }
@@ -1156,7 +1156,7 @@ boost::filesystem::path GetConfigFile()
 
     // Load old config file if present
     if (mapArgs.count("-conf") == 0 && !boost::filesystem::exists(pathConfigFile)) {
-        boost::filesystem::path pathOldConfigFile = GetDataDir(false) / "ppcoin.conf";
+        boost::filesystem::path pathOldConfigFile = GetDataDir(false) / "stakecoin.conf";
         if (boost::filesystem::exists(pathOldConfigFile))
             pathConfigFile = pathOldConfigFile;
     }
