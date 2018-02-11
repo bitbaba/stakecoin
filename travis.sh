@@ -49,7 +49,7 @@ if [ "$matrix" = "ARM" ]; then
 	export DEP_OPTS="NO_QT=1" 
 	export CHECK_DOC=1 
 	export GOAL="install" 
-	export BITCOIN_CONFIG="--enable-glibc-back-compat --enable-reduce-exports"
+	export BITCOIN_CONFIG="--disable-gui --disable-tests --disable-debug --disable-bench --without-libs --enable-glibc-back-compat --enable-reduce-exports"
 
 # Win32
 elif [ "$matrix" = "Win32" ]; then
@@ -59,16 +59,25 @@ elif [ "$matrix" = "Win32" ]; then
 	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" 
 	export RUN_TESTS=true 
 	export GOAL="install" 
-	export BITCOIN_CONFIG="--disable-tests --enable-reduce-exports"
+	export BITCOIN_CONFIG="--disable-gui --without-libs --disable-debug --disable-bench --disable-tests --enable-reduce-exports"
 
-# Win32Gui
+# Win32Gui-debug
 elif [ "$matrix" = "Win32Gui" ]; then
 	export HOST=i686-w64-mingw32 
 	export DPKG_ADD_ARCH="i386" 
 	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" 
 	export RUN_TESTS=false
-	export GOAL="deploy" 
+	export GOAL="install"
 	export BITCOIN_CONFIG="--with-gui --disable-tests --enable-debug --disable-bench --without-libs"
+
+# Win32Gui
+elif [ "$matrix" = "Win32Gui" ]; then
+	export HOST=i686-w64-mingw32
+	export DPKG_ADD_ARCH="i386"
+	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc"
+	export RUN_TESTS=false
+	export GOAL="deploy"
+	export BITCOIN_CONFIG="--with-gui --disable-tests --disable-debug --disable-bench --without-libs"
 
 # Win64Gui
 elif [ "$matrix" = "Win64Gui" ]; then
@@ -77,7 +86,7 @@ elif [ "$matrix" = "Win64Gui" ]; then
 	export PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc"
 	export RUN_TESTS=false
 	export GOAL="deploy"
-	export BITCOIN_CONFIG="--with-gui --disable-tests disable-bench disable-debug --enable-reduce-exports"
+	export BITCOIN_CONFIG="--with-gui --disable-tests --disable-bench --disable-debug --enable-reduce-exports"
 
 # Cross-Mac
 elif [ "$matrix" = "Cross-Mac" ]; then
