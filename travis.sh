@@ -10,7 +10,7 @@ export TRAVIS_BUILD_ID="TravisBuildId-0"
 export TRAVIS_BUILD_DIR=$(pwd)
 export TRAVIS_PULL_REQUEST="pr1"
 export TRAVIS_REPO_SLUG="username/reponame"
-export TRAVIS_JOB_NUMBER=JobNo.1
+export TRAVIS_JOB_NUMBER="job1"
 
 # Matrix
 matrix="Win32Gui"
