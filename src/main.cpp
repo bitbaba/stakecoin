@@ -5189,7 +5189,7 @@ void BitcoinMiner(CWallet *pwallet, bool fProofOfStake)
             return;
         }
 
-        while (vNodes.empty())
+        while (false && vNodes.empty())
             MilliSleep(1000);
 
         while (pwallet->IsLocked())
@@ -5323,7 +5323,7 @@ void BitcoinMiner(CWallet *pwallet, bool fProofOfStake)
 
             // Check for stop or if block needs to be rebuilt
             boost::this_thread::interruption_point();
-            if (vNodes.empty())
+            if (false && vNodes.empty())
                 break;
             if (nBlockNonce >= 0xffff0000)
                 break;
