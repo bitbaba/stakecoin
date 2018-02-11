@@ -13,7 +13,7 @@ export TRAVIS_REPO_SLUG="username/reponame"
 export TRAVIS_JOB_NUMBER=JobNo.1
 
 # Matrix
-#matrix="Win32Gui"
+matrix="Win32Gui"
 #matrix="Linux"
 #matrix="Cross-Mac"
 
@@ -68,7 +68,7 @@ elif [ "$matrix" = "Win32Gui" ]; then
 	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" 
 	export RUN_TESTS=false
 	export GOAL="deploy" 
-	export BITCOIN_CONFIG="--with-gui --disable-tests --disable-debug"
+	export BITCOIN_CONFIG="--with-gui --disable-tests --enable-debug --disable-bench --without-libs"
 
 # Win64Gui
 elif [ "$matrix" = "Win64Gui" ]; then
@@ -111,15 +111,15 @@ sudo apt-get install --no-install-recommends --no-upgrade -qq automake autoconf 
 
 # install:
 if [ -n "$PPA" ]; then 
-        add-apt-repository "$PPA" -y;
+    sudo add-apt-repository "$PPA" -y;
 fi
 
 if [ -n "$DPKG_ADD_ARCH" ]; then 
-        dpkg --add-architecture "$DPKG_ADD_ARCH" ;
+    sudo dpkg --add-architecture "$DPKG_ADD_ARCH" ;
 fi
 
 if [ -n "$PACKAGES" ]; then 
-        ignore command \`sudo apt-get update\';
+    sudo apt-get update;
 fi
 
 if [ -n "$PACKAGES" ]; then 
