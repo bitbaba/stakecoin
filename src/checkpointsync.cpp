@@ -69,8 +69,8 @@ using namespace std;
 
 
 // stakecoin: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";
-const std::string CSyncCheckpoint::strTestPubKey = "0400c195be8d5194007b3f02249f785a51505776bd8f43cc6d49206163e08a63ad9009c814966921c361b14949c51e281edc9347e7ce0e8c57019df1313a6cac7b";
+const std::string CSyncCheckpoint::strMainPubKey = "0476f195578458f667c84a1b8a026445fe012f43968a62948afb38ebf8b3dc2398dea17222697bdd9032ad386d68b5c57434757c16e3dc2a5a6e4889e0bee5830d";
+const std::string CSyncCheckpoint::strTestPubKey = "04168b892218cb842d5b8f40462f71262861adb84dd08c1813ffebc3219624671b3f02fa6611e79666219a3650f6b574cc52318692acaff373079a4de273f660e8";
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
 
