@@ -3267,7 +3267,7 @@ bool InitBlockIndex() {
         printf("blockHash: %s\n", hash.ToString().c_str());
         printf("genesisHash: %s\n", hashGenesisBlock.ToString().c_str());
         printf("merkleRootHash: %s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x3c2d8f85fab4d17aac558cc648a1a58acff0de6deb890c29985690052c5993c2"));
+        assert(block.hashMerkleRoot == uint256("0x4cf5ed93d49c93dc0436bf0d1cc9e9fff4dae8a787fc12ccf91a892891f64d5f"));
         block.print();
         assert(hash == hashGenesisBlock);
         // stakecoin: check genesis block
