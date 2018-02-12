@@ -13,10 +13,10 @@ src/build.h
 src/qt/peercoin-qt
 
 *.exe
-src/bitcoin
-src/bitcoind
-src/bitcoin-cli
-src/bitcoin-tx
+src/stakecoin
+src/stakecoind
+src/stakecoin-cli
+src/stakecoin-tx
 src/test/test_bitcoin
 src/test/test_bitcoin_fuzzy
 src/qt/test/test_bitcoin-qt

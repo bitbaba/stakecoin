@@ -1383,7 +1383,7 @@ bool CWallet::CreateTransaction(CScript scriptPubKey, int64 nValue,
 }
 
 // stakecoin: create coin stake transaction
-bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int64 nSearchInterval, CTransaction& txNew)
+bool CWallet::CreateCoinStake(/*const CKeyStore& keystore, */unsigned int nBits, int64 nSearchInterval, CTransaction& txNew)
 {
     // The following split & combine thresholds are important to security
     // Should not be adjusted if you don't understand the consequences
@@ -1473,7 +1473,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
                 {
                     // convert to pay to public key type
                     CKey key;
-                    if (!keystore.GetKey(uint160(vSolutions[0]), key))
+                    if (!/*keystore.*/GetKey(uint160(vSolutions[0]), key))
                     {
                         if (fDebug && GetBoolArg("-printcoinstake"))
                             printf("CreateCoinStake : failed to get key for kernel type=%d\n", whichType);
