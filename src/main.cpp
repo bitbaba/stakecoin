@@ -82,8 +82,10 @@ int64 nHPSTimerStart = 0;
 // Settings
 int64 nTransactionFee = MIN_TX_FEE;
 
-
-
+// Money Range check
+bool MoneyRange(int64 nValue) {
+    return (nValue >= 0 && nValue <= MAX_MONEY);
+}
 //////////////////////////////////////////////////////////////////////////////
 //
 // dispatching functions
@@ -1519,7 +1521,7 @@ bool CTransaction::CheckInputs(CValidationState &state, CCoinsViewCache &inputs,
         {
             if (nValueIn < GetValueOut())
                 return state.DoS(100, error("CheckInputs() : %s value in < value out", GetHash().ToString().c_str()));
-    
+
             // Tally transaction fees
             int64 nTxFee = nValueIn - GetValueOut();
             if (nTxFee < 0)
@@ -2060,7 +2062,7 @@ bool SetBestChain(CValidationState &state, CBlockIndex* pindexNew)
 // stakecoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
-// might not find out about their coin age. Older transactions are 
+// might not find out about their coin age. Older transactions are
 // guaranteed to be in main chain by sync-checkpoint. This rule is
 // introduced to help nodes establish a consistent view of the coin
 // age (trust score) of competing branches.
@@ -2381,7 +2383,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
 
     // Check coinbase reward
     if (vtx[0].GetValueOut() > (IsProofOfWork()? (GetProofOfWorkReward(nBits) - vtx[0].GetMinFee() + MIN_TX_FEE) : 0))
-        return state.DoS(50, error("CheckBlock() : coinbase reward exceeded %s > %s", 
+        return state.DoS(50, error("CheckBlock() : coinbase reward exceeded %s > %s",
                    FormatMoney(vtx[0].GetValueOut()).c_str(),
                    FormatMoney(IsProofOfWork()? GetProofOfWorkReward(nBits) : 0).c_str()));
 
@@ -3629,7 +3631,7 @@ void static ProcessGetData(CNode* pfrom)
                         // and we want it right after the last block so they don't
                         // wait for other stuff first.
                         // stakecoin: send latest proof-of-work block to allow the
-                        // download node to accept as orphan (proof-of-stake 
+                        // download node to accept as orphan (proof-of-stake
                         // block might be rejected by stake connection check)
                         vector<CInv> vInv;
                         vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
@@ -4815,7 +4817,7 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
         int64 nSearchTime = txCoinStake.nTime; // search to current time
         if (nSearchTime > nLastCoinStakeSearchTime)
         {
-            if (pwallet->CreateCoinStake(*pwallet, pblock->nBits, nSearchTime-nLastCoinStakeSearchTime, txCoinStake))
+            if (pwallet->CreateCoinStake(/* *pwallet,*/ pblock->nBits, nSearchTime-nLastCoinStakeSearchTime, txCoinStake))
             {
                 if (txCoinStake.nTime >= max(pindexPrev->GetMedianTimePast()+1, pindexPrev->GetBlockTime() - nMaxClockDrift))
                 {   // make sure coinstake would meet timestamp protocol
@@ -5226,7 +5228,7 @@ void BitcoinMiner(CWallet *pwallet, bool fProofOfStake)
                     continue;
                 }
                 strMintWarning = "";
-                printf("CPUMiner : proof-of-stake block found %s\n", pblock->GetHash().ToString().c_str()); 
+                printf("CPUMiner : proof-of-stake block found %s\n", pblock->GetHash().ToString().c_str());
                 SetThreadPriority(THREAD_PRIORITY_NORMAL);
                 CheckWork(pblock, *pwalletMain, reservekey);
                 SetThreadPriority(THREAD_PRIORITY_LOWEST);

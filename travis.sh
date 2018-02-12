@@ -13,7 +13,7 @@ export TRAVIS_REPO_SLUG="username/reponame"
 export TRAVIS_JOB_NUMBER="job1"
 
 # Matrix
-matrix="Win32Gui"
+#matrix="Win32Gui"
 #matrix="Linux"
 #matrix="Cross-Mac"
 
