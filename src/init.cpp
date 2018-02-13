@@ -465,10 +465,6 @@ bool AppInit2(boost::thread_group& threadGroup)
     else
         fServer = GetBoolArg("-server");
 
-    /* force fServer when running without GUI */
-#if !defined(QT_GUI)
-    fServer = true;
-#endif
     fPrintToConsole = GetBoolArg("-printtoconsole");
     fPrintToDebugger = GetBoolArg("-printtodebugger");
     fLogTimestamps = GetBoolArg("-logtimestamps", true);
