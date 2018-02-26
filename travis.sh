@@ -102,7 +102,7 @@ elif [ "$matrix" = "Cross-Mac" ]; then
 elif [ "$matrix" = "Linux" ]; then
 	export HOST=x86_64-unknown-linux-gnu 
 	export PACKAGES="bc python3-zmq" 
-	export DEP_OPTS="NO_QT=1 NO_UPNP=1" 
+        export DEP_OPTS="NO_QT=1"
 	export RUN_TESTS=false
 	export GOAL="install"
 	export USE_SHELL="/bin/bash"
