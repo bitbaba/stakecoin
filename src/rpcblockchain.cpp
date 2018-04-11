@@ -199,12 +199,12 @@ Value getblock(const Array& params, bool fHelp)
 
 Value getutxos(const Array& params, bool fHelp)
 {
-    if (fHelp || params.size() != 0)
+    if (fHelp || params.size() != 1)
         throw runtime_error(
-            "getutxos\n"
+            "getutxos(address)\n"
             "Returns the unspent transaction output set.");
 
-    Object ret;
+    Array ret;
     std::string strAddress = params[0].get_str();
 
     std::map<COutPoint, CTxOut> maps;
@@ -213,9 +213,9 @@ Value getutxos(const Array& params, bool fHelp)
             COutPoint key = it->first;
             CTxOut val = it->second;
             Object entry;
-            entry.push_back(Pair("txid", key.hash.ToString());
-            entry.push_back(Pair("n", key.n);
-            entry.push_back(Pair("amout", ValueFromAmount(val.nValue));
+            entry.push_back(Pair("txid", key.hash.ToString()));
+            entry.push_back(Pair("n", (int)key.n));
+            entry.push_back(Pair("amout", ValueFromAmount(val.nValue)));
             ret.push_back(entry);
         }
     }
