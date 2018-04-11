@@ -56,7 +56,7 @@ elif [ "$matrix" = "Win32" ]; then
 	export HOST=i686-w64-mingw32 
 	export DPKG_ADD_ARCH="i386" 
 	export DEP_OPTS="NO_QT=1" 
-	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" 
+	export PACKAGES="python3 nsis g++-mingw-w64-i686 bc" 
 	export RUN_TESTS=true 
 	export GOAL="install" 
 	export BITCOIN_CONFIG="--disable-gui --without-libs --disable-debug --disable-bench --disable-tests --enable-reduce-exports"
@@ -65,7 +65,7 @@ elif [ "$matrix" = "Win32" ]; then
 elif [ "$matrix" = "Win32Gui" ]; then
 	export HOST=i686-w64-mingw32 
 	export DPKG_ADD_ARCH="i386" 
-	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc" 
+	export PACKAGES="python3 nsis g++-mingw-w64-i686 bc" 
 	export RUN_TESTS=false
 	export GOAL="install"
 	export BITCOIN_CONFIG="--with-gui --disable-tests --enable-debug --disable-bench --without-libs"
@@ -74,7 +74,7 @@ elif [ "$matrix" = "Win32Gui" ]; then
 elif [ "$matrix" = "Win32Gui" ]; then
 	export HOST=i686-w64-mingw32
 	export DPKG_ADD_ARCH="i386"
-	export PACKAGES="python3 nsis g++-mingw-w64-i686 wine1.6 bc"
+	export PACKAGES="python3 nsis g++-mingw-w64-i686 bc"
 	export RUN_TESTS=false
 	export GOAL="deploy"
 	export BITCOIN_CONFIG="--with-gui --disable-tests --disable-debug --disable-bench --without-libs"
@@ -83,7 +83,7 @@ elif [ "$matrix" = "Win32Gui" ]; then
 elif [ "$matrix" = "Win64Gui" ]; then
 	export HOST=x86_64-w64-mingw32
 	export DPKG_ADD_ARCH="i386"
-	export PACKAGES="python3 nsis g++-mingw-w64-x86-64 wine1.6 bc"
+	export PACKAGES="python3 nsis g++-mingw-w64-x86-64 bc"
 	export RUN_TESTS=false
 	export GOAL="deploy"
 	export BITCOIN_CONFIG="--with-gui --disable-tests --disable-bench --disable-debug --enable-reduce-exports"
@@ -107,6 +107,16 @@ elif [ "$matrix" = "Linux" ]; then
 	export GOAL="install"
 	export USE_SHELL="/bin/bash"
 	export BITCOIN_CONFIG="--disable-debug --without-libs --without-gui --disable-gui --disable-tests --disable-bench --enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER"
+
+# debug 
+elif [ "$matrix" = "debug" ]; then
+	export HOST=x86_64-unknown-linux-gnu 
+	export PACKAGES="bc python3-zmq" 
+        export DEP_OPTS="NO_QT=1"
+	export RUN_TESTS=false
+	export GOAL="install"
+	export USE_SHELL="/bin/bash"
+	export BITCOIN_CONFIG="--enable-debug --without-libs --without-gui --disable-gui --disable-tests --disable-bench --enable-zmq --enable-glibc-back-compat --enable-reduce-exports CPPFLAGS=-DDEBUG_LOCKORDER"
 
 # undefined
 else 

@@ -1,4 +1,6 @@
-SDKs/
+SDKs
+sdk-sources
+sources
 work/
 built/
 sources/

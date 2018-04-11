@@ -4,8 +4,6 @@
 /src/peercoin-cli
 /src/peercoind
 
-depends/sdk-sources
-depends/sources
 dist/
 dpi36.background.tiff
 dpi72.background.tiff
