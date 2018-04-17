@@ -207,7 +207,7 @@ Value getutxos(const Array& params, bool fHelp)
     Array ret;
     std::string strAddress = params[0].get_str();
 
-    std::set<CCoins> coinset;
+    std::map<COutPoint, CCoins> coinset;
     if (pcoinsTip->GetUtxos(strAddress, coinset)) {
         /*for(std::map<COutPoint, CTxOut>::iterator it = maps.begin(); it != maps.end(); ++it){
             COutPoint key = it->first;

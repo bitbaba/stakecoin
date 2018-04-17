@@ -112,7 +112,7 @@ bool CBlockTreeDB::ReadLastBlockFile(int &nFile) {
     return Read('l', nFile);
 }
 
-bool CCoinsViewDB::GetUtxos(const std::string & address, std::set<CCoins> & coinset) {
+bool CCoinsViewDB::GetUtxos(const std::string & address, std::map<COutPoint, CCoins> & coinset) {
     leveldb::Iterator *pcursor = db.NewIterator();
     pcursor->SeekToFirst();
 
@@ -136,7 +136,7 @@ bool CCoinsViewDB::GetUtxos(const std::string & address, std::set<CCoins> & coin
                         //i; out.nValue;
                         CTxDestination dest;
                         if (ExtractDestination(out.scriptPubKey, dest) && address == CBitcoinAddress(dest).ToString()){
-                            coinset.insert(coins);
+                            coinset.insert(std::make_pair(COutPoint(txhash, i), coins));
                             //std::cout<<txhash.ToString()<<":"<<i<<":"<<out.nValue<<std::endl;
                         }
                     }
