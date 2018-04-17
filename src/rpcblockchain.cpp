@@ -209,15 +209,22 @@ Value getutxos(const Array& params, bool fHelp)
 
     std::map<COutPoint, CCoins> coinset;
     if (pcoinsTip->GetUtxos(strAddress, coinset)) {
-        /*for(std::map<COutPoint, CTxOut>::iterator it = maps.begin(); it != maps.end(); ++it){
+        for(std::map<COutPoint, CTxOut>::iterator it = maps.begin(); it != maps.end(); ++it){
             COutPoint key = it->first;
-            CTxOut val = it->second;
+            CCoins val = it->second;
+            CTxOut coin = val.vout[key.n];
             Object entry;
             entry.push_back(Pair("txid", key.hash.ToString()));
             entry.push_back(Pair("n", (int)key.n));
-            entry.push_back(Pair("amout", ValueFromAmount(val.nValue)));
+            entry.push_back(Pair("height", (int)val.nHeight));
+            entry.push_back(Pair("coinbase", val.fCoinBase));
+            entry.push_back(Pair("coinstake", val.fCoinStake));
+            entry.push_back(Pair("coinbase", (int)val.nTime));
+            entry.push_back(Pair("coinbase", (int)val.nVersion));
+            entry.push_back(Pair("amout", ValueFromAmount(coin.nValue)));
+            entry.push_back(Pair("scriptPubKey", (coin.scriptPubKey.ToString())));
             ret.push_back(entry);
-        }*/
+        }
     }
     return ret;
 }
