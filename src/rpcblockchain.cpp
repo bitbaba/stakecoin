@@ -207,9 +207,9 @@ Value getutxos(const Array& params, bool fHelp)
     Array ret;
     std::string strAddress = params[0].get_str();
 
-    std::map<COutPoint, CTxOut> maps;
-    if (pcoinsTip->GetUtxos(strAddress, maps)) {
-        for(std::map<COutPoint, CTxOut>::iterator it = maps.begin(); it != maps.end(); ++it){
+    std::set<CCoins> coinset;
+    if (pcoinsTip->GetUtxos(strAddress, coinset)) {
+        /*for(std::map<COutPoint, CTxOut>::iterator it = maps.begin(); it != maps.end(); ++it){
             COutPoint key = it->first;
             CTxOut val = it->second;
             Object entry;
@@ -217,7 +217,7 @@ Value getutxos(const Array& params, bool fHelp)
             entry.push_back(Pair("n", (int)key.n));
             entry.push_back(Pair("amout", ValueFromAmount(val.nValue)));
             ret.push_back(entry);
-        }
+        }*/
     }
     return ret;
 }
